@@ -50,7 +50,6 @@ video {
     width: auto;
     height: 500px;
     width: 100%;
-    display: ;
 }
 #about {
     background-color: rgb(255, 255, 255);
@@ -122,4 +121,8 @@ a {
 }
 .Home {
     text-decoration: underline;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
 }

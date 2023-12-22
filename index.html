@@ -13,14 +13,17 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"/>
       <link rel="shortcut icon" type="image/x-icon" href="image/imagemini.jpg" />
-      <link rel="stylesheet" href="css/style.css" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
       <meta content="true" name="HandheldFriendly" />
       <meta content="width" name="MobileOptimized" />
       <meta content="yes" name="apple-mobile-web-app-capable" />
       <script src="./Scripts/script_time.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/toastr@2.1.4/toastr.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/toastr@2.1.4/build/toastr.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css" />
+      <script src="./Scripts/toast_script.js"></script>
    </head>
-
    <body>
       <header id="home">
       <h2>Продажа кофт и футболок отличного качества</h2>
@@ -31,9 +34,6 @@
             <li class="stroka_navigatsii"><a href="./index2.html">Товары</a></li>
             <li class="stroka_navigatsii"><a href="./index3.html">Контакты</a></li>
             <li class="stroka_navigatsii"><a href="./index4.html">Отзывы</a></li>
-            <li class="stroka_navigatsii">
-            <a href="#contact">Доставка/Оплата</a>
-            </li>
          </ul>
       </nav>
       </header>
@@ -62,7 +62,7 @@
       </section>
       <section id="products">
          <h2>Товары</h2>
-         <div class="grid">
+         <div class="products_grid">
             <div class="block">
             <img src="image/Платье Ящерица.jpg" alt="Платье | Ящерица" />
             <h3><em>Платье | Ящерица</em></h3>
@@ -91,31 +91,36 @@
             Наши отзывы
             </caption>
             <thead>
-            <tr class="table_grid_tr">
+            <tr class="table_otzivi">
                <th>Андрей</th>
                <th>Валентина</th>
                <th>Антон</th>
                <th>Александр</th>
-            </tr>
+            </tr class="table_otzivi">
             </thead>
             <tbody>
-            <tr class="table_grid_tr">
-               <td>
-                  Отличное качество и быстрая доставка! Муж рад.
-               </td>
-               <td>
-                  Отличное качество и быстрая доставка! Муж рад.
-               </td>
-               <td>
+            <tr class="table_otzivi">
+               <td class="table_otzivi">
                   Отличное качество и быстрая доставка! Жена рада.
                </td>
-               <td>
+               <td class="table_otzivi">
+                  Отличное качество и быстрая доставка! Муж рад.
+               </td>
+               <td class="table_otzivi">
                   Отличное качество и быстрая доставка! Жена рада.
                </td>
-            </tr>
+               <td class="table_otzivi">
+                  Отличное качество и быстрая доставка! Жена рада.
+               </td>
+            </tr class="table_otzivi">
+         </table>
+            <h3> Размерная сетка</h3>
+            <div  class="mygridtable">
+            <div> </div><div>Рост, см/ Размер</div><div>40</div><div>42</div><div>44</div><div>46</div><div>48</div><div>50</div><div>52</div><div>54</div><div>56</div>
+            <div>Обхват груди, см</div><div>158-176</div><div>80</div><div>84</div><div>88</div><div>92</div><div>100</div><div>104</div><div>108</div><div>112</div><div>116</div>
+            </div>
             </tbody>
             <tfoot></tfoot>
-         </table>
       </section>
       </main>
       <footer>

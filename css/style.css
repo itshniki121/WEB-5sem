@@ -122,7 +122,17 @@ a {
 .Home {
     text-decoration: underline;
 }
-.grid {
+.products_grid {
     display: flex;
     flex-wrap: wrap;
+}
+.mygridtable {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(2, 0.1fr);
+    border: 3px solid #245488;
+    text-align: center;
+}
+.toast-info {
+    background-color: orange;
 }

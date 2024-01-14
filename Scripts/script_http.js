@@ -40,7 +40,7 @@ async function updateRequest(firstCall, limit) {
 function renderPosts(postsList) {
   const postsListElement = document.getElementById("postsList");
   postsListElement.innerHTML = "";
-  const template = document.getElementById("staffTemplate");
+  const template = document.getElementById("postTemplate");
   postsList.forEach((post) => {
     const postElement = document.importNode(template.content, true);
     postElement.querySelector(".email").textContent = "Email: " + post.email;

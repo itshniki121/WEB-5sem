@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function () {
   let flag = false;
-  const limit = 6;
+  const limit = 4;
   const refreshButton = document.getElementById("refresh");
   refreshButton.addEventListener("click", function () {
     flag = !flag;

@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 .block {
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-size: 15px;
@@ -12,6 +13,7 @@
     padding: 30px 10px;
     border-radius: 40px;
 }
+
 .cost {
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-size: 17px;
@@ -19,6 +21,7 @@
     text-align: left;
     font-style: normal;
 }
+
 main {
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-size: 17px;
@@ -26,6 +29,7 @@ main {
     text-align: left;
     font-style: normal;
 }
+
 body {
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-size: 17px;
@@ -34,30 +38,37 @@ body {
     text-align: left;
     font-style: normal;
 }
+
 img {
     width: 330px;
     height: 450px;
     border-radius: 60px;
     box-shadow: 0px 0px 40px 10px #363636;
 }
+
 footer {
     background-color: rgb(255, 255, 255);
 }
+
 #home {
     background-color: rgb(255, 255, 255);
 }
+
 video {
     width: auto;
     height: 500px;
     width: 100%;
 }
+
 #about {
     background-color: rgb(255, 255, 255);
 }
+
 #products {
     background-color: rgb(255, 255, 255);
     padding: 10px 20px;
 }
+
 h2 {
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-size: 30px;
@@ -67,6 +78,7 @@ h2 {
     font-weight: 500;
     font-style: normal;
 }
+
 h3 {
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-size: 22px;
@@ -76,10 +88,12 @@ h3 {
     font-weight: 500;
     font-style: normal;
     text-transform: capitalize;
-}   
-tr:nth-child(even)td {
-background-color: black;
 }
+
+tr:nth-child(even)td {
+    background-color: black;
+}
+
 caption {
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-size: 30px;
@@ -89,24 +103,30 @@ caption {
     font-weight: 500;
     font-style: normal;
 }
+
 .text {
     text-indent: 25px;
     text-transform: capitalize;
 }
+
 a {
     text-decoration: none;
 }
+
 .stroka_navigatsii {
     display: inline;
     padding: 10px;
 }
+
 .stroka_navigatsii:hover {
     background: orange;
-}   
+}
+
 .grid {
     display: grid;
     grid-template: 400px 300px / repeat(4, 1fr);
 }
+
 .table_grid_tr {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -114,25 +134,72 @@ a {
     justify-items: center;
     align-items: center;
 }
-@media screen and (max-width: 600px){
-    video{
+
+@media screen and (max-width: 600px) {
+    video {
         display: none;
     }
 }
+
 .Home {
     text-decoration: underline;
 }
+
 .products_grid {
     display: flex;
     flex-wrap: wrap;
 }
-.mygridtable {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(2, 0.1fr);
-    border: 3px solid #245488;
-    text-align: center;
-}
+
 .toast-info {
     background-color: orange;
+}
+
+.table_otzivi {
+    padding: 15px;
+}
+
+.table_otzivi_imena {
+    text-align: center;
+}
+
+.list {
+    text-align: center;
+}
+
+.todo-list {
+    list-style: none;
+    background-color: orange;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.todo-form {
+    width: 50%;
+    margin: 0 auto 10px;
+    background-color: orange;
+    border-radius: 60px;
+}
+
+.navigation {
+    background-color: orange;
+    border-radius: 30px;
+    width: 50%;
+}
+.preloader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="Кофты, Купить кофты, кофты отличного качества, купить футболку"
+    />
+    <meta name="description" content="Распродажа различных видов мячей" />
+    <title>Интернет магазин кофт и тишек</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="image/imagemini.jpg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta content="true" name="HandheldFriendly" />
+    <meta content="width" name="MobileOptimized" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <script src="./Scripts/script_time.js"></script>
+  </head>
+
+  <body>
+    <header id="home">
+      <h2>Продажа кофт и футболок отличного качества</h2>
+      <nav class="navigation">
+        <ul>
+          <li class="stroka_navigatsii"><a href="./index.html">Главная</a></li>
+          <li class="stroka_navigatsii"><a href="./index1.html">О нас</a></li>
+          <li class="stroka_navigatsii"><a href="./index2.html">Товары</a></li>
+          <li class="stroka_navigatsii">
+            <a href="./index3.html">Контакты</a>
+          </li>
+          <li class="stroka_navigatsii"><a href="./index4.html">Отзывы</a></li>
+          <li class="stroka_navigatsii Home">
+            <a href="#home">Лист желанных товаров</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section class="list">
+      <h1>Лист твоих красивых покупок</h1>
+      <form id="todo-form" class="todo-form">
+        <label for="todo-input">Добавить</label>
+        <input type="text" id="todo-input" />
+        <button type="submit">Добавить</button>
+      </form>
+
+      <!-- Используем тег template для создания списка задач -->
+      <template id="todo-template">
+        <li>
+            <span></span>
+    <button class="delete-btn">Удалить</button>
+    <button class="complete-btn">Куплено</button>
+          </li>
+      </template>
+
+      <ul id="todo-list" class="todo-list"></ul>
+
+      <script src="Scripts/script_list.js"></script>
+    </section>
+    </main>
+    <footer>
+      <div id="loadTime"></div>
+    </footer>
+  </body>
+</html>

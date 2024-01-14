@@ -16,9 +16,9 @@ async function updateRequest(firstCall, limit) {
   if (firstCall) {
     // const limit = 7;
     const randomStart = Math.floor(Math.random() * limit);
-    url += '?_start=${randomStart}&_limit=${limit}';
+    url += `?_start=${randomStart}&_limit=${limit}`;
   } else {
-    url += '?_start=${limit}&_limit=${limit}';
+    url += `?_start=${limit}&_limit=${limit}`;
   }
   try {
     preloader.style.display = 'block';

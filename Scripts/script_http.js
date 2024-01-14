@@ -44,8 +44,8 @@ function renderPosts(postsList) {
   const template = document.getElementById('postTemplate');
   postsList.forEach((post) => {
     const postElement = document.importNode(template.content, true);
-    postElement.querySelector('.email').textContent = 'Email: ' + post.email;
-    postElement.querySelector('.body').textContent = 'Body: ' + post.body;
+    postElement.querySelector('.email').textContent = 'Почта: ' + post.email;
+    postElement.querySelector('.body').textContent = 'Отзыв: ' + post.body;
     postsListElement.appendChild(postElement);
   });
 }

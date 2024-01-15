@@ -14,7 +14,6 @@ async function updateRequest(firstCall, limit) {
   const errorPlaceholder = document.createElement('div');
   let url = 'https://jsonplaceholder.typicode.com/comments';
   if (firstCall) {
-    // const limit = 7;
     const randomStart = Math.floor(Math.random() * limit);
     url += `?_start=${randomStart}&_limit=${limit}`;
   } else {

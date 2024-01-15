@@ -3,7 +3,6 @@ const input = document.getElementById("todo-input");
 const list = document.getElementById("todo-list");
 const template = document.getElementById("todo-template");
 
-// загрузка сохраненных задач из локального хранилища
 const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
 savedTasks.forEach((task) => {
   const li = template.content.firstElementChild.cloneNode(true);
@@ -14,7 +13,6 @@ savedTasks.forEach((task) => {
   list.appendChild(li);
 });
 
-// обработчик отправки формы
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -25,8 +23,7 @@ form.addEventListener("submit", (event) => {
     li.querySelector("span").textContent = task;
     list.appendChild(li);
 
-    // сохранение задачи в локальное хранилище
-    savedTasks.push({
+    savedTasks.push({    // сохранение локальное хранилище
       task: task,
       completed: false,
     });
@@ -36,7 +33,6 @@ form.addEventListener("submit", (event) => {
   }
 });
 
-// обработчик клика на кнопке complete
 list.addEventListener("click", (event) => {
   const li = event.target.closest("li");
 
@@ -44,7 +40,7 @@ list.addEventListener("click", (event) => {
     li.classList.toggle("completed");
     li.style.color = 'green';
 
-    // обновление статуса задачи в локальном хранилище
+    // обновление статуса задачи
     const task = li.querySelector("span").textContent;
     const index = savedTasks.indexOf(task);
     savedTasks[index] = {
